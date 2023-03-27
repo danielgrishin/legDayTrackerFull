@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addLegDayButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LegDayFragActivity">
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inpSquat"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/squatTitle"
+        app:layout_constraintStart_toEndOf="@+id/squatTitle"
+        app:layout_constraintTop_toTopOf="@+id/squatTitle" />
+
+    <EditText
+        android:id="@+id/inpLegExt"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/legExtTitle"
+        app:layout_constraintStart_toEndOf="@+id/legExtTitle"
+        app:layout_constraintTop_toTopOf="@+id/legExtTitle" />
+
+    <EditText
+        android:id="@+id/inpLegCurl"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/legCurlTitle"
+        app:layout_constraintStart_toEndOf="@+id/legCurlTitle"
+        app:layout_constraintTop_toTopOf="@+id/legCurlTitle" />
+
+    <TextView
+        android:id="@+id/squatTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="36dp"
+        android:text="Squat :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/legExtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Leg Extension :"
+        app:layout_constraintEnd_toEndOf="@+id/squatTitle"
+        app:layout_constraintTop_toBottomOf="@+id/squatTitle" />
+
+    <TextView
+        android:id="@+id/legCurlTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Leg Curl :"
+        app:layout_constraintEnd_toEndOf="@+id/legExtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/legExtTitle" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legCurlTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
