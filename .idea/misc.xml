@@ -4,8 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/nygrs/AndroidStudioProjects/legDayTracker/app/src/main/res/layout/activity_add_leg_day.xml" value="0.264" />
-        <entry key="..\:/Users/nygrs/AndroidStudioProjects/legDayTracker/app/src/main/res/layout/activity_main.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/nygrs/AndroidStudioProjects/legDayTracker/app/src/main/res/layout/leg_day_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/nygrs/AndroidStudioProjects/legDayTracker/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/nygrs/AndroidStudioProjects/legDayTracker/app/src/main/res/layout/leg_day_fragment.xml" value="0.4" />
       </map>
     </option>
   </component>

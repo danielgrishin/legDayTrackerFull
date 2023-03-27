@@ -5,16 +5,17 @@
     android:id="@+id/addLegDayButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LegDayFragActivity">
+    tools:context=".LegDayFragActivity"
+    android:background="#ebebeb">
 
-    <EditText
+    <!--<TextView
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
-        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -86,5 +87,154 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/legCurlTitle" />
+        -->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="10dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="🦵"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:backgroundTint="#fa2f62"
+        app:iconPadding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextDate"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#3af06a"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ebebeb"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="MAR 30" />
+
+    <EditText
+        android:id="@+id/inpSquat"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="@+id/squatTitle"
+        app:layout_constraintStart_toStartOf="@+id/squatTitle"
+        app:layout_constraintTop_toBottomOf="@+id/squatTitle"
+        tools:text="200" />
+
+    <EditText
+        android:id="@+id/inpLegExt"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="@+id/legExtTitle"
+        app:layout_constraintStart_toStartOf="@+id/legExtTitle"
+        app:layout_constraintTop_toBottomOf="@+id/legExtTitle"
+        tools:text="200" />
+
+    <EditText
+        android:id="@+id/inpLegCurl"
+        android:layout_width="100dp"
+        android:layout_height="58dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="3"
+        app:layout_constraintEnd_toEndOf="@+id/legCurlTitle"
+        app:layout_constraintStart_toStartOf="@+id/legCurlTitle"
+        app:layout_constraintTop_toBottomOf="@+id/legCurlTitle"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/legExtTitle"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="#3af06a"
+        android:text="LEG EXT."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/squatTitle"
+        app:layout_constraintEnd_toStartOf="@+id/legCurlTitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/squatTitle"
+        app:layout_constraintTop_toTopOf="@+id/squatTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/squatTitle"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="68dp"
+        android:background="#3af06a"
+        android:text="SQUAT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/legExtTitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/legCurlTitle"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:background="#3af06a"
+        android:text="LEG CURL"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/legExtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/legExtTitle"
+        app:layout_constraintTop_toTopOf="@+id/legExtTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="325dp"
+        android:layout_height="33dp"
+        android:text="Enter today's max wieghts."
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/legExtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

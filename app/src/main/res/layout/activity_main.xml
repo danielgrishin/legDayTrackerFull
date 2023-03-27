@@ -10,10 +10,12 @@
         android:id="@+id/legDays"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#ebebeb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/addLegDayButton"
@@ -21,12 +23,28 @@
         android:layout_height="75dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
+        android:elevation="10dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="+"
         android:textSize="40dp"
-        app:backgroundTint="#3af06a"
+        app:backgroundTint="#fa2f62"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#3af06a"
+        android:text="Leg Day Tracker"
+        android:textAlignment="center"
+        android:textColor="#ebebeb"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

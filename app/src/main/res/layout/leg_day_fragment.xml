@@ -3,44 +3,122 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#ebebeb">
 
 
     <TextView
         android:id="@+id/fragDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:background="#3af06a"
         android:ems="10"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ebebeb"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="MAR 30" />
+
+    <TextView
+        android:id="@+id/inpSquat"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragDate"
+        app:layout_constraintTop_toBottomOf="@+id/squatTitle"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/inpLegExt"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inpLegCurl"
+        app:layout_constraintStart_toEndOf="@+id/inpSquat"
+        app:layout_constraintTop_toBottomOf="@+id/legExtTitle"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/inpLegCurl"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legCurlTitle"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/squatTitle"
+        android:layout_width="70dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#3af06a"
+        android:text="SQUAT"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inpSquat"
+        app:layout_constraintStart_toStartOf="@+id/inpSquat"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/fragSquat"
-        android:layout_width="134dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragDate" />
+        android:id="@+id/legExtTitle"
+        android:layout_width="70dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#3af06a"
+        android:text="LEG EXT."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inpLegExt"
+        app:layout_constraintStart_toStartOf="@+id/inpLegExt"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/fragLegExtension"
-        android:layout_width="136dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fragLegCurl"
-        app:layout_constraintStart_toEndOf="@+id/fragSquat"
-        app:layout_constraintTop_toTopOf="@+id/fragSquat"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/fragLegCurl"
-        android:layout_width="112dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fragLegExtension" />
+        android:id="@+id/legCurlTitle"
+        android:layout_width="70dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#3af06a"
+        android:text="LEG CURL"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inpLegCurl"
+        app:layout_constraintStart_toStartOf="@+id/inpLegCurl"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

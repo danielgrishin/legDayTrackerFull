@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import org.w3c.dom.Text
 
 class LegDayAdapter(private val items: List<DisplayLegDay>) : RecyclerView.Adapter<LegDayAdapter.ViewHolder>(){
     // Provide a direct reference to each of the views within a data item
@@ -25,9 +24,9 @@ class LegDayAdapter(private val items: List<DisplayLegDay>) : RecyclerView.Adapt
             // TODO: Store each of the layout's views into
             // the public final member variables created above
             legDayDate=itemView.findViewById(R.id.fragDate)
-            legDaySquat = itemView.findViewById(R.id.fragSquat)
-            legDayLegExtension = itemView.findViewById(R.id.fragLegExtension)
-            legDayLegCurl = itemView.findViewById(R.id.fragLegCurl)
+            legDaySquat = itemView.findViewById(R.id.inpSquat)
+            legDayLegExtension = itemView.findViewById(R.id.inpLegExt)
+            legDayLegCurl = itemView.findViewById(R.id.inpLegCurl)
         }
     }
 
