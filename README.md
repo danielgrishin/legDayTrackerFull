@@ -2,7 +2,7 @@
 
 Submitted by: **Daniel Grishin**
 
-**Leg Day Tracker 2.0** is a health metrics app that allows users to track their progess in the gym, legs to be specific. 
+**Leg Day Tracker 2.0** is a health metrics app that allows users to track their progess in the gym. 
 
 Time spent: **15** hours spent in total
 
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='legDayTrackerBetter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='legDayBetterRecord.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap
