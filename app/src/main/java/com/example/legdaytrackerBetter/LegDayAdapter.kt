@@ -1,10 +1,11 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.legdaytrackerBetter.R
 
 class LegDayAdapter(private val items: List<DisplayLegDay>) : RecyclerView.Adapter<LegDayAdapter.ViewHolder>(){
     // Provide a direct reference to each of the views within a data item
@@ -44,9 +45,9 @@ class LegDayAdapter(private val items: List<DisplayLegDay>) : RecyclerView.Adapt
         val item = items.get(position)
         // Set item views based on views and data model
         holder.legDayDate.text=item.date
-        holder.legDaySquat.text = item.squat
-        holder.legDayLegExtension.text = item.legExtension
-        holder.legDayLegCurl.text = item.legCurl}
+        holder.legDaySquat.text = item.squat.toString()
+        holder.legDayLegExtension.text = item.legExtension.toString()
+        holder.legDayLegCurl.text = item.legCurl.toString()}
 
     override fun getItemCount(): Int {
         return items.size

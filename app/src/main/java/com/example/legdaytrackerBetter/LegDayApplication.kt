@@ -1,4 +1,4 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import android.app.Application
 

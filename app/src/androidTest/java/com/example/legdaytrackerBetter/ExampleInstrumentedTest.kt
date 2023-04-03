@@ -1,4 +1,4 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

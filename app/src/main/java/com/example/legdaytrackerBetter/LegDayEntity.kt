@@ -1,4 +1,4 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey
 data class LegDayEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     @ColumnInfo(name = "date") val date: String?,
-    @ColumnInfo(name = "squat") val squat: String?,
-    @ColumnInfo(name = "legExtension") val legExtension: String?,
-    @ColumnInfo(name = "legCurl") val legCurl: String?
+    @ColumnInfo(name = "squat") val squat: Int?,
+    @ColumnInfo(name = "legExtension") val legExtension: Int?,
+    @ColumnInfo(name = "legCurl") val legCurl: Int?
 )
 

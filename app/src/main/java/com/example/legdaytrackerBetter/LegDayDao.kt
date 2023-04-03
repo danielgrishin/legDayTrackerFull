@@ -1,4 +1,4 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import androidx.room.Dao
 import androidx.room.Insert
@@ -9,6 +9,15 @@ import kotlinx.coroutines.flow.Flow
 interface LegDayDao {
     @Query("SELECT * FROM leg_day_table")
     fun getAll(): Flow<List<LegDayEntity>>
+
+    @Query("SELECT squat FROM leg_day_table")
+    fun getSquat(): List<Int>
+
+    @Query("SELECT legExtension FROM leg_day_table")
+    fun getLegExt(): List<Int>
+
+    @Query("SELECT legCurl FROM leg_day_table")
+    fun getLegCurl(): List<Int>
 
     @Insert
     fun insertAll(legDays: List<LegDayEntity>)

@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.legdaytrackerBetter.GraphFragment"
+    android:background="#ebebeb">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/growthSquat"
+            android:layout_width="100dp"
+            android:layout_height="58dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/growthSquatTitle"
+            app:layout_constraintStart_toStartOf="@+id/growthSquatTitle"
+            app:layout_constraintTop_toBottomOf="@+id/growthSquatTitle"
+            tools:text="200" />
+
+        <TextView
+            android:id="@+id/growthLegExt"
+            android:layout_width="100dp"
+            android:layout_height="58dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/growthLegExtTitle"
+            app:layout_constraintStart_toStartOf="@+id/growthLegExtTitle"
+            app:layout_constraintTop_toBottomOf="@+id/growthLegExtTitle"
+            tools:text="200" />
+
+        <TextView
+            android:id="@+id/growthLegCurl"
+            android:layout_width="100dp"
+            android:layout_height="58dp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/growthLegCurlTitle"
+            app:layout_constraintStart_toStartOf="@+id/growthLegCurlTitle"
+            app:layout_constraintTop_toBottomOf="@+id/growthLegCurlTitle"
+            tools:text="200" />
+
+        <TextView
+            android:id="@+id/growthLegExtTitle"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:background="#3adef0"
+            android:text="LEG EXT."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/growthSquatTitle"
+            app:layout_constraintEnd_toStartOf="@+id/growthLegCurlTitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/growthSquatTitle"
+            app:layout_constraintTop_toTopOf="@+id/growthSquatTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/growthSquatTitle"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="68dp"
+            android:background="#f0c23a"
+            android:text="SQUAT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/growthLegExtTitle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/growthLegCurlTitle"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:background="#b93af0"
+            android:text="LEG CURL"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/growthLegExtTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/growthLegExtTitle"
+            app:layout_constraintTop_toTopOf="@+id/growthLegExtTitle"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/growthSubject"
+            android:layout_width="325dp"
+            android:layout_height="33dp"
+            android:text="Growth since day one."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/growthLegExtTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

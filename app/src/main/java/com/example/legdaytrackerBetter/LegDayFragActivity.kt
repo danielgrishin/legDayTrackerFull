@@ -1,7 +1,6 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -9,10 +8,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.RecyclerView
-import com.example.legdaytracker.databinding.ActivityMainBinding
+import com.example.legdaytrackerBetter.R
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -94,9 +91,9 @@ class LegDayFragActivity : AppCompatActivity() {
                 (application as LegDayApplication).db.legDayDao().insert(
                     LegDayEntity(
                         date = legDayDate.text.toString(),
-                        squat = legDaySquat.text.toString(),
-                        legExtension = legDayLegExtension.text.toString(),
-                        legCurl = legDayLegCurl.text.toString()
+                        squat = legDaySquat.text.toString().toInt(),
+                        legExtension = legDayLegExtension.text.toString().toInt(),
+                        legCurl = legDayLegCurl.text.toString().toInt()
                     )
                 )
             }

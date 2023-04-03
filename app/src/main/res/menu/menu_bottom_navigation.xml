@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_playlist_add_24"
+        android:title="List"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/nav_growth"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_show_chart_24"
+        android:title="Growth"
+        app:showAsAction="ifRoom" />
+</menu>

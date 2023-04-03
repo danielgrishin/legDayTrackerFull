@@ -1,4 +1,4 @@
-package com.example.legdaytracker
+package com.example.legdaytrackerBetter
 
 import android.content.Context
 import androidx.room.Database
